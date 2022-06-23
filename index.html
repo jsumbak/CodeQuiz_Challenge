@@ -4,41 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Password Generator</title>
+    <title>Coding Quiz</title>
     <link rel="stylesheet" href="./assets/style.css" />
     <title>JavaScript Coding Quiz</title>
   </head>
 
   <body>
-    <div id="timer">00:00</div> 
+    <!-- Start quiz and info -->
     <div id="quiz">
           <h1>Coding Quiz Challenge: JavaScript Fundamentals!</h1>
-          <button id="start">Start</button>
-          <button id="submit">Results</button>
+          <p>You will be taking a quiz on JavaScript coding fundamentals! You will have multiple choice options for each question and will be given 1 minute to answer all questions. Any questions answered incorrectly will result in a dock of 10 seconds.</p>
+          <button id="start-btn">Start</button>
           </div>
-    <div class="hide questions">
-        <div id="answer-button"></div>
+     <!-- interactive buttons-->     
+    <div class="questions hide">
+      <div id="timer">00:00</div> 
+        <!-- <div id="answer-buttons"></div> -->
         <button class="btn">Choice 1</button>
         <button class="btn">Choice 2</button>
         <button class="btn">Choice 3</button>
         <button class="btn">Choice 4</button>
+      </div>    
+    <div class="buttons">    
+        <div id="results"></div> 
+        <button id="next-button" class="next-btn btn hide">Next</button>
+        <!-- <button id="quit">Exit Quiz</button> -->
     </div>
-        
-    <div id="results"></div> 
-
         <script src="./assets/script.js"></script>
   </body>
 </html>
-
-<!-- 
-GIVEN I am taking a code quiz
-WHEN I click the start button
-THEN a timer starts and I am presented with a question
-WHEN I answer a question
-THEN I am presented with another question
-WHEN I answer a question incorrectly
-THEN time is subtracted from the clock
-WHEN all questions are answered or the timer reaches 0
-THEN the game is over
-WHEN the game is over
-THEN I can save my initials and score -->
